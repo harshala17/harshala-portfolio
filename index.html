@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshala's Portfolio </title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' name="menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section Design -->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Harshala <span>Athani </span> </h1>
+            <p>I graduated my Bachelor's Of Engineering in Computer's from Fr. Conceicao Rodrigues College of
+                Engineering. And seeking for good opportunities.
+                I contribute to the growth of the company as well as engage in opportunities to
+                further the company's goals
+            </p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/harshala-athani-993230164/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/harshala17"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="./assets/Harshala Athani Resume.pdf" class="btn" target="_blank">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="assets/myImage.png" alt="">
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="assets/about-my.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Fresher</h3>
+            <!-- <h3>And I'm a <span> Frontend Developer </span></h3> -->
+            <p>I graduated my Bachelor's Of Engineering in Computer's from
+                Fr. Conceicao Rodrigues College of Engineering with an overall CGPA of 9.14
+                I'm well-versed with skills such as Java , Angular , SQL , HTML and CSS.
+                Also completed my 2 months of Internship in Angular.
+                My personal interest is listening to music.
+            </p>
+            <a href="./assets/Harshala Athani Resume.pdf" class="btn" target="_blank">Read More</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Activities</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Developer Head</h3>
+                <p>I have been working as a web developer lead for 1 year in college.
+                    I believe I am a very ambitious person who loves to work on making the website work well.
+                    Working on the web is my passion.
+
+                </p>
+                <a href="https://hawkicrce.com/" class="btn" disabled>Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-angular'></i>
+                <h3>Angular Developer Internship</h3>
+                <p>The internship was of 2 months and learned various modules such as components , directives ,
+                    services , Data binding. And created a blog website which contained routing ,
+                    two - way data binding , pipes , Auth Gaurd.</p>
+                <a href="https://ang-blog-fbd4b.web.app/" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="/assets/blog.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Blog </h4>
+                    <p>This blog website has data binding which ensures that our content is always up-to-date.
+
+                    </p>
+                    <a href="https://ang-blog-fbd4b.web.app/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/assets/todo.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>To-do list </h4>
+                    <p>
+                        You can add your daily todos and make a check list of what is to be done and what is pending.
+                    </p>
+                    <a href="https://incredible-hamster-71e507.netlify.app/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/assets/crickinformer.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>CrickInformer </h4>
+                    <p>
+                        Live cricket score using Angular and Spring Boot.
+                    </p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form id="email-form">
+            <div class="input-box">
+                <input type="text" placeholder="First Name" id="Name" name="name" required>
+                <input type="text" placeholder="Email Address" id="Email" name="email" required>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" id="Phone" name="phone" required>
+                <input type="text" placeholder="Email Subject" id="Subject" name="subject" required>
+            </div>
+            <textarea id="Message" cols="30" rows="10" placeholder="Your Message" name="message" required></textarea>
+            <button type="button" onclick="sendMail()" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Harshala | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+
+        </div>
+    </footer>
+
+
+    <!-- Email -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"> </script>
+
+   
+    <script>
+        emailjs.init("yM234rnWaIqg0s_VI");
+    </script>
+
+    <!-- Scroll  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./node_modules/toastr/build/toastr.min.css">
+    <script src="./node_modules/toastr/build/toastr.min.js">
+
+        
+    </script>
+    
+    <!-- Typed Js -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
